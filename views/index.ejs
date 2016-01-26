@@ -9,10 +9,19 @@
   <script src="/js/chat.js"></script>
 </head>
 <body>
-  <ul id="messages"></ul>
-  <form action="">
-    <input id="m" autocomplete="off">
-    <button type="submit">Send</button>
-  </form>
+  <header>
+    <button type="button" name="addUsername">Create</button>
+    <input type="text" name="username" id="username" autofocus="autofocus" placeholder="username">
+    <label for="username">Username:</label>
+    <h1>Socket.io Chat App</h1>
+    <p>Start with creating a username to the right!</p>
+  </header>
+  <main>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </main>
 </body>
 </html>

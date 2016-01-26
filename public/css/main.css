@@ -9,7 +9,11 @@ body {
   font: 13px Helvetica, Arial;
 }
 
-form {
+main {
+  display: none;
+}
+
+main form {
   background: #000;
   padding: 3px;
   position: fixed;
@@ -17,15 +21,15 @@ form {
   width: 100%;
 }
 
-form input {
+main form input {
   border: 0;
   padding: 10px;
   width: 90%;
   margin-right: .5%;
 }
 
-form button {
-  width: 9%;
+main form button {
+  width: 8%;
   background: rgb(130, 224, 255);
   border: none;
   padding: 10px;
@@ -43,4 +47,28 @@ form button {
 
 #messages li:nth-child(odd) {
   background: #eee;
+}
+
+header {
+  margin: 15px;
+}
+
+header > * {
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+header input, label, button {
+  margin-left: 10px;
+  float: right;
+  font-size: 1.5em;
+}
+
+header button {
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 5px;
 }

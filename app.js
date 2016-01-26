@@ -19,4 +19,16 @@ io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
   });
+
+  socket.on('user enter', function(msg) {
+    io.emit('user enter', msg);
+  });
+
+  socket.on('user leave', function(msg) {
+    io.emit('user leave', msg);
+  });
+
+  socket.on('user typing', function(msg) {
+    io.emit('user typing', msg);
+  });
 });
